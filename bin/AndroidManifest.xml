@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wunian.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_musics"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wunian.activity.GuideActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       <activity android:name="com.wunian.activity.MainActivity"/>
+        <activity android:name="com.wunian.activity.MusicActivity" />
+        <activity android:name="com.wunian.activity.MusicPlayerActivity"/>
+        <activity android:name="com.wunian.activity.MovieActivity"/>
+        <activity android:name="com.wunian.activity.MoviePlayerActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.wunian.activity.PictureActivity"/>
+        <activity android:name="com.wunian.activity.PictureShowActivity"/>
+        <activity android:name="com.wunian.activity.CameraActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.wunian.activity.WebbrowserActivity"/>
+        <activity android:name="com.wunian.activity.CalculatorActivity"/>
+        <activity android:name="com.wunian.activity.CalendarActivity"/>
+        <activity android:name="com.wunian.activity.ChronActivity"/>
+        <activity android:name="com.wunian.activity.PaintActivity" android:label="画板"/>
+        <activity android:name="com.wunian.activity.SkinActivity"/>
+
+    </application>
+
+</manifest>

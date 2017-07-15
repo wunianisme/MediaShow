@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    
+    <SurfaceView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/svCamera"
+        />
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/takeLayout"
+        android:visibility="gone"
+        >
+        <Button
+    	android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentBottom="true"
+	    android:padding="10dp"
+	    android:layout_margin="10dp"
+	    android:background="@color/more_transparent"
+	    android:textColor="#fff"
+	    android:text="拍照"
+	    android:id="@+id/btnTake"
+    	/>
+    	<Button
+    	android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_toRightOf="@id/btnTake"
+	    android:layout_alignTop="@id/btnTake"
+	    android:text="聚焦"
+	    android:padding="10dp"
+	     android:textColor="#fff"
+	     android:background="@color/more_transparent"
+	    android:id="@+id/btnPreview"
+    	/>    
+        
+        
+    </RelativeLayout>
+    
+    
+
+</FrameLayout>

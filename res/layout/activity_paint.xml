@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.wunian.view.DrawView
+        android:id="@+id/dvPaint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_music10"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/half_transparent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_selector" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="画板"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/half_transparent" 
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:id="@+id/menuLayout"
+        android:visibility="visible"
+        >
+
+        <Button
+            android:id="@+id/btnColor"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:background="@color/more_transparent"
+            android:layout_height="wrap_content"
+            android:text="颜色" />
+
+        <Button
+            android:id="@+id/btnWidth"
+           android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:background="@color/more_transparent"
+            android:layout_height="wrap_content"
+            android:text="宽度" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:background="@color/more_transparent"
+            android:layout_height="wrap_content"
+            android:text="橡皮" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:background="@color/more_transparent"
+            android:layout_height="wrap_content"
+            android:text="保存" />
+    </LinearLayout>
+    
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:background="@color/more_transparent"
+        android:orientation="horizontal"
+        android:id="@+id/rgColor"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        >
+
+        <RadioButton
+            android:id="@+id/rbBlack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+           
+            android:layout_height="wrap_content"
+            android:text="黑" />
+        <RadioButton
+            android:id="@+id/rbRed"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="红" />
+
+        <RadioButton
+            android:id="@+id/rbBlue"
+           android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="蓝" />
+
+        <RadioButton
+            android:id="@+id/rbGreen"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="绿" />
+
+        <RadioButton
+            android:id="@+id/rbOrange"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="橙" />
+        
+        <RadioButton
+            android:id="@+id/rbMage"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="紫" />
+    </RadioGroup>
+    
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/more_transparent"
+        android:orientation="horizontal"
+        android:id="@+id/rgWidth"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        >
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="1" />
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <RadioButton
+            android:id="@+id/rb5"
+           android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <RadioButton
+            android:id="@+id/rb7"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="7" />
+
+        <RadioButton
+            android:id="@+id/rb10"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="10" />
+        
+        <RadioButton
+            android:id="@+id/rb20"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="20" />
+    </RadioGroup>
+
+</FrameLayout>
